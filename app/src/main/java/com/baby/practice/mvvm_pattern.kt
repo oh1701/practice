@@ -10,6 +10,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.baby.practice.databinding.ActivityMvvmpatternBinding
 
 class Mvvmview:ViewModel(){
+    //2021-03-29
     var text = MutableLiveData<String>()
 
     fun gettext() = text

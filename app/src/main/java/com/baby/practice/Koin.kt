@@ -10,8 +10,9 @@ import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 import org.koin.dsl.module
 
+//2021-03-31
 
-data class dd(
+data class QD(
     val a:AA,
     val b:BB,
     val c:CC,
@@ -36,10 +37,10 @@ class Koin : AppCompatActivity() {  //Koin 사용할 시 AndroidManifest에 appl
         StudentController.Log()
 
         //Koin을 쓰지 않을 경우의 번거로움.
-        var afaf = dd(AA("adfas"), BB("asfaf"), CC("dghsh"), DD("gsh"))
+        var afaf = QD(AA("adfas"), BB("asfaf"), CC("dghsh"), DD("gsh"))
 
         //Koin을 쓸 경우의 편리성
-        val parn:dd by inject()
+        val parn:QD by inject()
         parn.a.an = "Afaf"
         parn.b.af = "aaf"
         parn.c.ff = "asdf"
